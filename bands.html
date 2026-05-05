@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Directory</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Band Directory</h1>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="bands.html">Bands</a>
+    <a href="albums.html">Albums</a>
+    <a href="news.html">News</a>
+    <a href="about.html">About</a>
+</nav>
+</header>
+
+<section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search bands...">
+</section>
+
+<section class="filters">
+    <select id="genreFilter">
+        <option value="all">All Genres</option>
+        <option value="Thrash">Thrash</option>
+        <option value="Death">Death</option>
+        <option value="Black">Black</option>
+    </select>
+</section>
+
+<section class="band-grid" id="bandGrid">
+    <div class="band-card" data-genre="Thrash">
+        <h2>Metallica</h2>
+        <p>Thrash Metal</p>
+    </div>
+
+    <div class="band-card" data-genre="Death">
+        <h2>Death</h2>
+        <p>Death Metal</p>
+    </div>
+
+    <div class="band-card" data-genre="Black">
+        <h2>Mayhem</h2>
+        <p>Black Metal</p>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albums</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Album Rankings</h1>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="bands.html">Bands</a>
+    <a href="albums.html">Albums</a>
+    <a href="news.html">News</a>
+    <a href="about.html">About</a>
+</nav>
+</header>
+
+<section class="sorting">
+    <select id="sortSelect">
+        <option value="rating">Sort by Average Rating</option>
+        <option value="year-oldest">Year (oldest to youngest)</option>
+        <option value="year-youngest">Year (youngest to oldest)</option>
+    </select>
+</section>
+
+<section id="albumList">
+    <div class="album-card" data-rating="95" data-year="1986">
+        <h2>Master of Puppets</h2>
+        <p>Made by Metallica</p>
+        <p>The Released Date: March 3, 1986.</p>
+        <p>Average Rating: 95%</p>
+    </div>
+
+    <div class="album-card" data-rating="89" data-year="1995">
+        <h2>Symbolic</h2>
+        <p>Made by Death</p>
+        <p>The Released Date: Mar 19, 1995</p>
+        <p>Average Rating: 89%</p>
+    </div>
+
+    <div class="album-card" data-rating="92" data-year="1994">
+        <h2>De Mysteriis Dom Sathanas</h2>
+        <p>Made by Mayhem</p>
+        <p>The Released Date: May 22, 1994</p>
+        <p>Average Rating: 92%</p>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
